@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Oranienbaum';
+    src: url('fonts/Oranienbaum-Regular.woff2') format('woff2'),
+        url('fonts/Oranienbaum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+a:link, :visited {
+    color: white;
+}
+
+.wrapper {
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Oranienbaum', Verdana;
+    font-size: 150px;
+    color: white;
+}
+
+fieldset {
+    
+}
+
+input {
+    margin-bottom: 4px;
+}
+
+.footer {
+    color: white;
+    padding: 10px;
+    font-family: 'Oranienbaum', Verdana;
+}
+
+.main {
+    background-color: rgb(246, 248, 253);
+    padding: 20px;
+    font-family: 'Oranienbaum', Verdana;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:default {
+    border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    border: 1px solid rgb(138, 161, 223);
+    outline: none;
+}

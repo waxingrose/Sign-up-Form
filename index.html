@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class=banner>
+            <div class="title"><img src="images/odin-lined.png" height="110px">Odin</div>
+        </div>
+        <div class="sidebar">
+            <div class="footer">
+                Photo by Halie West on <a href="unsplash.com">Unsplash</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <h1>This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams. Sign up <em>now</em> to get started.</h1>
+        <h1>You <em>know</em> you want to.</h1>
+        <form>
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <div>
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first" id="first-name" minlength="1">
+
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last" id="last-name" minlength="1">
+                </div>
+                <div>
+                    <label for="email-address">Email</label>
+                    <input type="email" name="email" id="email-address">
+
+                    <label for="telephone">Phone</label>
+                    <input type="tel" name="phone" id="telephone">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="pwd" id="password" minlength="8" maxlength="20">
+
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" name="pwd" id="confirm-password" minlength="8" maxlength="20">
+                </div>
+            </fieldset>
+        </form>
+        <p><button type="submit">Create Account</button></p>
+        <p>Already have an account? Log in</p>
+    </div>
+</body>
+
+</html>
