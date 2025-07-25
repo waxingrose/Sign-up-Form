@@ -1,32 +1,56 @@
 @font-face {
     font-family: 'Oranienbaum';
-    src: url('fonts/Oranienbaum-Regular.woff2') format('woff2'),
-        url('fonts/Oranienbaum-Regular.woff') format('woff');
+    src: url('fonts/Oranienbaum-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 body {
+    font-family: 'Oranienbaum', Georgia;
     display: flex;
     margin: 0;
 }
 
-a:link, :visited {
+.content a:link,
+.content a:visited {
+    color: black;
+}
+
+.footer a:link,
+.footer a:visited {
     color: white;
 }
 
-.wrapper {
+.content {
+    background-color: rgb(246, 248, 253);
+    padding: 1rem;
+    max-inline-size: 75ch;
+}
+
+.background {
     background-image: url('images/bg.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
 }
 
-.sidebar {
+.bg-banner {
+    background-color: rgba(27, 27, 27, 0.4);
+    position: relative;
+    top: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 9rem;
+    color: white;
+}
+
+.footer-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -35,49 +59,25 @@ a:link, :visited {
     width: 100%;
 }
 
-.banner {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: relative;
-    top: 200px;
-    padding: 10px;
-    text-align: center;
-}
-
-.title {
-    font-family: 'Oranienbaum', Verdana;
-    font-size: 150px;
+.footer {
     color: white;
-}
-
-fieldset {
-    
+    padding: 5px;
 }
 
 input {
-    margin-bottom: 4px;
-}
-
-.footer {
-    color: white;
-    padding: 10px;
-    font-family: 'Oranienbaum', Verdana;
-}
-
-.main {
-    background-color: rgb(246, 248, 253);
-    padding: 20px;
-    font-family: 'Oranienbaum', Verdana;
+    margin: 5px 0px;
 }
 
 input:invalid {
     border: 1px solid red;
 }
 
-input:default {
-    border: 1px solid #E5E7EB;
-}
-
 input:focus {
     border: 1px solid rgb(138, 161, 223);
     outline: none;
 }
+
+button {
+    border-width: 1px;
+}
+
